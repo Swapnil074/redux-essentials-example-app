@@ -1,5 +1,7 @@
 import React from 'react'
 import {useSelector} from 'react-redux';
+
+
 export const PostList = () => {
     const posts=useSelector(state=>state.posts);
     
@@ -11,6 +13,7 @@ export const PostList = () => {
   )
 
   return (
+    
     <section className="posts-list">
       <h2>Posts</h2>
       {renderedPosts}
